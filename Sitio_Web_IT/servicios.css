@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color:rgb(1, 1, 27)
+}
+
+body{
+  background-color: rgb(1, 1, 27);
+  color: white;
+  line-height: 1.5;
+}
+
+/*Body*/
+main{
+  margin: auto;
+  padding: auto;
+}
+
+.titulo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.titulo h1{
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
+  margin-left: 10px;
+  margin-right: 20px; 
+}
+
+.image-vd{
+  width: 50%;
+  height: 50%;
+}
+
+.image-vd img{
+  
+}
+
+.image-consultas{
+  width: 50%;
+  height: 50%;
+}
+
+.image-liderazgo{
+  width: 50%;
+  height: 50%;
+}
+
+
+/*Responsive*/
+@media (min-width: 700px) {
+  .main-container {
+    flex-direction: row; /* Alinea las columnas horizontalmente */
+  }
+
+}
+
+@media (min-width: 430px) {
+  .main-container {
+    flex-direction: row; /* Alinea las columnas horizontalmente */
+  }
+
+}
