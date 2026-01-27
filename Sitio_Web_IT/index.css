@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 /* Reset y estilos base */
+=======
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
   font-family: sans-serif;
+=======
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
 }
 
 body {
@@ -13,7 +19,11 @@ body {
 
 /* Header */
 header {
+<<<<<<< HEAD
   background-color:#060330;
+=======
+  background-color: #0f0869;
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -69,7 +79,10 @@ header {
 /* Main - Hero Section */
 main {
   min-height: calc(100vh - 140px);
+<<<<<<< HEAD
   background-color: #0c012eee;
+=======
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
 }
 
 .hero {
@@ -90,27 +103,43 @@ main {
 
 .titulo {
   font-size: 2.5rem;
+<<<<<<< HEAD
   color: #f3eded;
+=======
+  color: #1a1a1a;
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
   text-align: center;
   line-height: 1.2;
 }
 
 .subtitulo {
   font-size: 1.8rem;
+<<<<<<< HEAD
   color:#f3eded;
+=======
+  color:#1a1a1a;
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
   text-align: center;
   font-weight: 600;
 }
 
 .contenido {
   font-size: 1.5rem;
+<<<<<<< HEAD
   color:#f3eded;
+=======
+  color: #050505;
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
   margin-bottom: 0.5rem;
 }
 
 .container li {
   margin-left: 1.5rem;
+<<<<<<< HEAD
   color:#f3eded;
+=======
+  color: #050505;
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
@@ -132,7 +161,10 @@ main {
 }
 
 .btn {
+<<<<<<< HEAD
   justify-content: center;
+=======
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -155,7 +187,11 @@ main {
 
 /* Footer */
 footer {
+<<<<<<< HEAD
   background-color:#060330;
+=======
+  background-color:#0f0869;
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
   padding: 1rem 0;
   text-align: center;
 }
@@ -267,4 +303,8 @@ footer {
   .navegar {
     font-size: 0.85rem;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 918181f032f8d9b3be3f465d25d25eb49dbece19
