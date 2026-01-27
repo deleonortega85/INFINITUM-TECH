@@ -17,7 +17,7 @@ body {
 }
 
 .enfoque-container {
-  background-image: url("imagenes/Datos_clave.jpg");
+  background-image: url("/imagenes/Datos_clave.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

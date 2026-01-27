@@ -1,13 +1,13 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color:rgb(1, 1, 27)
+  background-color: rgb(1, 1, 27);
 }
 
 body{
@@ -19,7 +19,7 @@ body{
 /*Body*/
 main{
   margin: auto;
-  padding: auto;
+  padding: 0 10px;
 }
 
 .titulo{
@@ -29,7 +29,7 @@ main{
 }
 
 .titulo h1{
-  font-size: 40px;
+  font-size: clamp(28px, 5vw, 40px);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -38,41 +38,137 @@ main{
   display: flex;
   flex-direction: column; 
   gap: 15px;
-  margin-left: 10px;
-  margin-right: 20px; 
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1400px;
 }
 
-.image-vd{
-  width: 50%;
-  height: 50%;
+/* Estilos generales para las tarjetas */
+.image-vd,
+.image-consultas,
+.image-liderazgo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
-.image-vd img{
-  
+.image-vd img,
+.image-consultas img,
+.image-liderazgo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.image-consultas{
-  width: 50%;
-  height: 50%;
+/* Estilos generales para los textos */
+.texto-vd,
+.texto-consultas,
+.texto-liderazgo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  color: white;
+  padding: 20px;
+  text-align: justify;
 }
 
-.image-liderazgo{
-  width: 50%;
-  height: 50%;
+.texto-vd h3,
+.texto-consultas h3,
+.texto-liderazgo h3 {
+  font-weight: bold;
+  font-size: clamp(18px, 3vw, 20px);
+  margin-bottom: 8px;
 }
 
+.texto-vd p,
+.texto-consultas p,
+.texto-liderazgo p {
+  font-size: clamp(14px, 2vw, 15px);
+  text-align: justify;
+}
 
-/*Responsive*/
-@media (min-width: 700px) {
+.link a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link a:hover{
+  transform: translateY(-2px);
+  color: rgb(33, 31, 192);
+}
+
+footer {
+  background-color: #060330;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cntndo {
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Tablets pequeñas y móviles grandes */
+@media (min-width: 600px) {
   .main-container {
-    flex-direction: row; /* Alinea las columnas horizontalmente */
+    gap: 20px;
+    padding: 0 20px;
+  }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 
+  .image-vd,
+  .image-consultas,
+  .image-liderazgo {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 300px;
+    max-width: 500px;
+  }
 }
 
-@media (min-width: 430px) {
+/* Pantallas grandes (laptops y desktops) */
+@media (min-width: 1024px) {
   .main-container {
-    flex-direction: row; /* Alinea las columnas horizontalmente */
+    gap: 25px;
   }
 
+  .image-vd,
+  .image-consultas,
+  .image-liderazgo {
+    flex: 1 1 calc(33.333% - 25px);
+    max-width: 450px;
+  }
+
+  .texto-vd,
+  .texto-consultas,
+  .texto-liderazgo {
+    padding: 25px;
+  }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 1400px) {
+  .image-vd,
+  .image-consultas,
+  .image-liderazgo {
+    max-width: 500px;
+  }
 }
